@@ -1,0 +1,188 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.17502367338344246 -0.17590014684306954 0.9687238265346593 4.6856113038183
+  position 0.4585400116980208 8.151530048438241 3.958016938962456
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 6 3
+  floorAppearance OsbWood {
+  }
+}
+WoodenBox {
+  translation 1.33 -0.4 0.3
+}
+UR5e {
+  hidden position_0_0 1.569998314022271
+  hidden rotation_1 0 0 1 1.5699983140222709
+  hidden position_1_0 0.1500169242529552
+  hidden linearVelocity_1 -3.547951314731433e-07 6.382792289597055e-06 1.8992882061104536e-05
+  hidden angularVelocity_1 1.279106157413076e-05 1.6385946443364067e-06 2.7404242812342922e-05
+  hidden rotation_2 0 1 0 1.7208129242529464
+  hidden position_2_0 -0.09995485123573813
+  hidden linearVelocity_2 1.2360737435038308e-05 -0.000205550739753381 -0.00013428106488073917
+  hidden angularVelocity_2 -0.000828244313197846 -1.7409210895589582e-05 2.6588933885797623e-05
+  hidden rotation_3 0 -1 0 0.09995485123573673
+  hidden position_3_0 -0.03999147925084412
+  hidden linearVelocity_3 -7.023944903390648e-05 -0.0004420451676519143 -0.0003720155992215114
+  hidden angularVelocity_3 -0.0005225863098661818 -8.151430574807691e-06 2.373486869063959e-05
+  hidden rotation_4 0 1 0 1.5308045207491459
+  hidden position_4_0 -1.2063785260727248e-07
+  hidden linearVelocity_4 -7.298798242248428e-05 -0.0005713217323771852 -0.0004892620515222802
+  hidden angularVelocity_4 -0.0004009363880263665 -3.3513608241631178e-06 2.3286753086561143e-05
+  hidden rotation_5 0 0 -1 1.1920928955078128e-07
+  hidden position_5_0 3.014394743521743e-07
+  hidden linearVelocity_5 -7.070204809584487e-05 -0.0006131061212420487 -0.00047052009526292384
+  hidden angularVelocity_5 -0.0004008243745612421 -2.8746213338411e-06 2.3521070651411364e-05
+  hidden translation_6 -5.822581147688976e-08 1.7604823154826244e-10 0.1000057287441073
+  hidden rotation_6 0.7975618519800004 0.6031827077045324 0.008106379738223741 4.995779578161315e-07
+  hidden position_7_0 0.1700026397676429
+  hidden position_7_1 0.1700059213910662
+  hidden position_7_2 0.2999482974470513
+  hidden rotation_8 0.7055462698972577 0.7061090656779064 0.06012028277994078 3.261783390109851
+  hidden position_8_0 0.2999507553279568
+  hidden rotation_9 0 0 1 0.2504507553271161
+  hidden position_9_0 0.29993772296401744
+  hidden rotation_10 0 0 -1 0.22006227703597825
+  hidden position_10_0 -0.059999999999166886
+  hidden rotation_11 0 0 -0.9999999999999999 0.0076999999976414225
+  hidden rotation_12 0.7055462204267213 0.7061090161837028 0.06012144464042275 3.2617857072920597
+  hidden position_12_0 0.29995075582333464
+  hidden rotation_13 0 0 1 0.2504507558213096
+  hidden position_13_0 0.2999377229558817
+  hidden rotation_14 0 0 -1 0.22006227704411313
+  hidden position_14_0 -0.05999999999917638
+  hidden rotation_15 0 0 -1 0.007699999997987467
+  hidden rotation_16 0 0 1 0.2504482974459416
+  hidden position_16_0 0.29993775907038833
+  hidden rotation_17 0 0 -1 0.22006224092960605
+  hidden position_17_0 -0.059999999999257286
+  hidden rotation_18 0 0 -1 0.007699999997987467
+  translation 1.31 -0.4 0.6
+  controller "robot"
+  controllerArgs [
+    ""
+  ]
+  toolSlot [
+    Robotiq3fGripper {
+    }
+    DistanceSensor {
+      translation 0.01 0.09 0.034
+      rotation 0 0 1 1.7016950010791607
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      name "dsensor"
+      lookupTable [
+        0 0 0
+        0.01 400 0
+      ]
+    }
+    Transform {
+      rotation 0 1 0 0
+      children [
+        Camera {
+          translation 0.01 0.09 -0.036
+          rotation 0 0 1 1.5707996938995747
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 1 1 0
+                roughness 1
+                metalness 0
+              }
+              geometry Box {
+                size 0.01 0.01 0.01
+              }
+            }
+          ]
+          width 400
+          height 400
+          recognition Recognition {
+            maxRange 0.5
+          }
+        }
+      ]
+    }
+  ]
+}
+ConveyorBelt {
+  hidden translation_1 -1.082002742072169e-14 1.1102230246251565e-16 0.3748783560228855
+  hidden rotation_1 -0.6345510553522159 0.7728809469453232 5.382599114388598e-07 3.768179702750367e-06
+  hidden linearVelocity_1 -4.209069911410158e-14 -5.228360913868858e-16 1.5916157281026244e-15
+  hidden angularVelocity_1 -1.8917868742389865e-14 1.0595019958548065e-05 -1.2665936489915486e-11
+  translation 0 0.35 0
+  size 5 0.5 0.5
+  speed 0.1
+}
+DEF greenBox Solid {
+  translation -0.7 0.373155 0.573554
+  rotation -0.0001328739101658849 0.00015716156595717585 -0.9999999788223829 0.018522701128829883
+  children [
+    DEF box Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.15 0.15 0.15
+      }
+    }
+  ]
+  name "greenSolid"
+  boundingObject USE box
+  physics Physics {
+  }
+  recognitionColors [
+    0 1 0
+  ]
+}
+DEF redBox Solid {
+  translation 0.12009422338470245 0.3719818959179187 0.5735536094171854
+  rotation -0.004712332140791674 0.005676562049824186 -0.9999727849142142 0.0005166956001796489
+  children [
+    DEF box Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.00784314 0.00784314
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.15 0.15 0.15
+      }
+    }
+  ]
+  name "redSolid"
+  boundingObject USE box
+  physics Physics {
+  }
+  recognitionColors [
+    1 0 0
+  ]
+  linearVelocity 0.10000209793682406 1.962126213279094e-10 -1.5297316764172822e-06
+  angularVelocity -2.4296753946180263e-14 1.0785462865903201e-05 -1.3125387624727803e-11
+}
+MetalStorageBox {
+  translation 2.14 -0.3 0
+  rotation 0 0 1 1.57
+}
+MetalStorageBox {
+  name "metal storage box(1)"
+  translation 2.14 -1 0
+  rotation 0 0 1 1.57
+}
